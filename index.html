@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<title>Fernanda Abreu</title>
+	<title>Artwork . Fernanda Abreu</title>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=deivice-width, initial-scale=1">
@@ -12,8 +12,12 @@
 	
 		body {
 			font-family: "Courier New", courier, monospace;
-			background: FloralWhite;				
-	}
+			background: FloralWhite;
+		}
+		
+			h1 {
+			font-size: 30px;
+		}
 
 		.sidenav {
 			height: 100%;
@@ -25,10 +29,6 @@
 			background-color: DarkRed;
 			overflow-x: hidden;
 			padding-top: 20px;
-		}
-		
-		.sidenav h1 {
-			font-size: 30px;
 		}
 
 		.sidenav a {
@@ -42,6 +42,39 @@
 		.sidenav a:hover {
 			color: FloralWhite;
 		}
+
+		.main {
+			margin-left: 260px; /*largura da sidenav*/
+			padding: 30px 30px 30px 30px;
+			z-index: 0;
+		}
+		
+		.main h1 {
+			color: DarkRed;
+		}
+
+		.main a {
+			text-decoration: none;
+			color: DarkRed;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;			
+		}
+		
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: DarkRed;
+			min-width: 230px;
+			z-index: 1;
+			box-shadow: 6px 6px 6px 30px rgba(139,0,0,0);
+		}
+	
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
 		
 	</style>
 </head>
@@ -49,13 +82,29 @@
 <body>
 
 	<div class="sidenav">
-		<a href="index.html"><h1>Fernanda Abreu</h1></a>
+		<a href="index.html"><h1>Fernanda A.</h1></a>
+
+		<div class="dropdown">
+			<a href="index.html"><b>Artwork</b></a>			
+			<div class="dropdown-content">
+				<a href="memoria.html">Memória</a>
+				<a href="vazio.html">Vazio</a>
+				<a href="pertencimento.html">Pertencimento</a>		
+			</div>
+		</div>
+
+		<a href="aboutme.html">About Me</a>
+	</div>
+
+	<div class="main">
+		<h1>Artwork</h1>
+		
+		<b>	
 		<a href="pertencimento.html">Pertencimento</a>
 		<a href="vazio.html">Vazio</a>
 		<a href="memoria.html">Memória</a>
 		<a href="solidao.html">Solidão</a>
-		
-		<a href="aboutme.html">About Me</a>
+		</b>
 	</div>
 
 </body>
