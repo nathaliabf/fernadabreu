@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt">
 
 <head>
 	<title>Vazio . Fernanda Abreu</title>
@@ -8,96 +8,83 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=deivice-width, initial-scale=1">
 	
-	<style>
-	
-		body {
-			font-family: "Courier New", courier, monospace;
-			background: FloralWhite;
-		}
-		
-			h1 {
-			font-size: 30px;
-		}
-
-		.sidenav {
-			height: 100%;
-			width: 230px;
-			position: fixed;
-			z-index:1;
-			top: 0;
-			left: 0;
-			background-color: DarkRed;
-			overflow-x: hidden;
-			padding-top: 20px;
-		}
-
-		.sidenav a {
-			padding: 6px 6px 6px 30px;
-			font-size: 21px;
-			text-decoration: none;
-			color: white;
-			display: block;
-		}
-
-		.sidenav a:hover {
-			color: FloralWhite;
-		}
-
-		.main {
-			margin-left: 260px; /*largura da sidenav*/
-			padding: 30px 30px 30px 30px;
-			z-index: 0;
-		}
-		
-		.main h1 {
-			color: DarkRed;
-		}
-
-		.main a {
-			text-decoration: none;
-			color: DarkRed;
-		}
-
-		.dropdown {
-			position: relative;
-			display: inline-block;			
-		}
-		
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: DarkRed;
-			min-width: 230px;
-			z-index: 1;
-			box-shadow: 6px 6px 6px 30px rgba(139,0,0,0);
-		}
-	
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<header id="masterhead" class="site-header">
+		<div class="sidenav">
+			<h1>
+				<a id="titulo-site" href="index.html" rel="home">Fernanda A.</a>
+			</h1>
 
-	<div class="sidenav">
-		<a href="index.html"><h1>Fernanda A.</h1></a>
-
-		<div class="dropdown">
-			<a href="index.html"><b>Artwork</b></a>
-			<div class="dropdown-content">
-				<a href="memoria.html">Memória</a>
-				<a href="vazio.html">Vazio</a>
-				<a href="pertencimento.html">Pertencimento</a>		
-			</div>
+			<nav id="navegacao-primaria" role="navigation">
+				<div id="menu-principal" class="menu-principal-conteudo">
+					<ul id="menu-menu-principal" class="nav-menu">
+						<div class="dropdown">
+							<li id="item-menu-home">
+								<a href="index.html">
+									<b>Artwork</b>
+								</a>			
+							</li>
+							<div class="dropdown-conteudo">
+									<li id="item-menu-artwork-memoria">
+										<a href="memoria.html">Memória</a>
+									</li>
+									<li id="item-menu-artwork-vazio">
+										<a href="vazio.html">Vazio</a>	
+									</li>
+									<li id="item-menu-artwork-pertencimento">
+										<a href="pertencimento.html">Pertencimento</a>	
+									</li>
+							</div>
+						</div>
+						<li id="item-menu-aboutme">
+							<a href="aboutme.html">About Me</a>	
+						</li>
+					</ul>	
+				</div>
+			</nav>
 		</div>
-
-		<a href="aboutme.html">About Me</a>
-	</div>
+	</header>
 
 	<div class="main">
-		<h1>Vazio</h1>
+		<h1 id="titulo-pagina">
+			<a href="vazio.html">Vazio</a>
+		</h1>
+
+		<div class="imagem">
+			<ul>
+				<li><img src="Artwork\Vazio\01.jpg" alt="Mulher albina de cabelos soltos está quase de frente para o espectador, veste maiô vermelho, sentada em uma mesa de toalha branca, olhando para baixo e com o braço direito esticado sobre a mesa. Sua mão direita está aberta e nela tem uma cereja tão vermelha quanto seu maiô. Ao fundo, uma parede bege e um quadrinho da Santa Ceia."></li>
+
+				<li><img src="Artwork\Vazio\02.jpg" alt="A mesma mulher, vestida com o maiô vermelho, agora vista totalmente de perfil e mais distante, ainda na mesma posição, está ao lado direito da cena, sentada na mesa de toalha branca e com seu braço direito apoiado nela, empurra um pratinho com várias cerejas em direção à cadeira do outro lado da mesa, na qual um casaco comprido e bege parece estar “sentado”. A parede bege atrás da mulher, com o quadrinho da Santa Ceia, está ao lado direito da cena, porém agora pode-se ver outros dois quadros pendurados nela, mais acima. Ao centro e ao fundo está uma janela enorme, cor de rosa, dá pra ver um pouco do verde e do rosa da árvore lá fora."></li>
+
+				<li><img src="Artwork\Vazio\03.jpg" alt="A mesma mulher, agora com vestido vermelho, se encontra em uma mesa bem maior, de madeira maciça escura. Á frente dela um variado banquete de goiabas, cacau, maçã, uvas, pãezinhos, geléias, bolo e torta. Algumas taças de vidro estão à sua frente, com bebidas em tons de rosa, vinho e champagne. Ela está com um prato à sua frente, com um pedaço de torta de morango inacabado, e se inclina em direção ao prato da cadeira ao seu lado direito, quase alcançando e tocando seu garfo na torta alheia. Apenas duas cadeiras estão ao redor da mesa: a dela e a do casaco, que parece estar “sentado” nela. Ao fundo, uma janela cor de rosa semiaberta.
+"></li>
+
+				<li><img src="Artwork\Vazio\04.jpg" alt="O casaco bege “sentado” na cadeira, visto de frente, com todas as comidas postas à sua frente. Ao fundo, uma janela cor de rosa semi-aberta."></li>
+
+				<li><img src="Artwork\Vazio\05.jpg" alt="Close no prato dela, visto de lado, com a torta de morango despedaçada, inacabada, e metade de uma goiaba. Ao lado esquerdo, alguns copos, ao lado direito vê-se apenas um pedaço do chão e ao centro o prato. Um pouco mais próximo do espectador está o guardanapo, dobrado sobre a mesa."></li>
+
+				<li><img src="Artwork\Vazio\06.jpg" alt="Mulher em pé, de costas, ao centro da cena. Ela segura o casaco bege e o deixa arrastar no chão. A mulher parece estar saindo do cômodo, ela encosta em uma porta aberta, ao seu lado esquerdo. Ao seu lado direito, uma outra porta aberta, que dá para outro cômodo que não aparece na cena."></li>
+
+				<li><img src="Artwork\Vazio\07.jpg" alt="Uma cadeira em madeira maciça, vista de cima, aparecendo na parte inferior da cena o braço esquerdo da cadeira e, ao centro, o assento. O casaco bege está “sentado” na cadeira e a mão da mulher está encostada sobre ele, tocando na parte inferior do casaco e também no punho da manga. Como se acariciasse a peça."></li>
+
+				<li><img src="Artwork\Vazio\08.jpg" alt="A mulher, com o vestido vermelho, está sentada numa escada de tecido verde escuro com detalhes em bege. O casaco está em seus braços, ela o abraça e olha para frente, para o vazio."></li>
+
+				<li><img src="Artwork\Vazio\09.jpg" alt="A cadeira de madeira agora é vista com uma certa distância, ao centro da cena,  podendo ver todo seu corpo. Seu encosto é de tela bege, é uma cadeira de balanço. Ao fundo uma parede com pratos decorativos de cerâmica e um quadro com uma paisagem de cachoeira."></li>
+
+				<li><img src="Artwork\Vazio\10.jpg" alt="A cadeira ao centro da cena, com o casaco bege apoiado sobre ela, vistos de frente e de baixo. Ao chão e ao lado esquerdo da cena, a mulher está de joelhos e apoiada com a cabeça na cadeira, sobre a mão esquerda, e seu braço direito toca no casaco. O braço direito está tapando sua boca, vê-se apenas seus olhos que se direcionam para baixo, sem olhar para o espectador."></li>
+
+				<li><img src="Artwork\Vazio\11.jpg" alt="Close num dos pratos de cerâmica que decoram uma das paredes da casa, ele é branco e tem o desenho de um botão de rosa cor de rosa, ao centro."></li>
+
+				<li><img src="Artwork\Vazio\12.jpg" alt="A mulher está deitada em um sofá bege com dois assentos verdes escuros, ao centro da cena. Ela deita no canto direito do sofá, abraçada com o casaco bege e olhando para o vazio. Ao fundo, uma parede na qual o sofá está encostado é decorada por um tapete longo, vertical, quase da mesma largura que o sofá. O desenho do tapete são diversas rosas cor de rosa, arranjos em bege e um fundo acinzentado."></li>
+
+				<li><img src="Artwork\Vazio\13.jpg" alt="A mulher está de pé e de frente para o espectador, ao lado direito de uma cadeira que está de costas. O casaco está apoiado em seu encosto, cobrindo-o. Vê-se apenas as costas do casaco e a cadeira cria volume no mesmo, dando a impressão de estar sendo vestido por alguém. A mulher apoia as mãos nos ombros do casaco e olha para o lado de fora de uma janela, ao seu lado direito."></li>
+
+			</ul>
+
+		</div>
 	</div>		
 
 </body>

@@ -1,110 +1,96 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="pt">
 
 <head>
-	<title>Artwork . Fernanda Abreu</title>
+	<title>Fernanda A.</title>
 	
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=deivice-width, initial-scale=1">
-	
-	<style>
-	
-		body {
-			font-family: "Courier New", courier, monospace;
-			background: FloralWhite;
-		}
-		
-			h1 {
-			font-size: 30px;
-		}
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		.sidenav {
-			height: 100%;
-			width: 230px;
-			position: fixed;
-			z-index:1;
-			top: 0;
-			left: 0;
-			background-color: DarkRed;
-			overflow-x: hidden;
-			padding-top: 20px;
-		}
-
-		.sidenav a {
-			padding: 6px 6px 6px 30px;
-			font-size: 21px;
-			text-decoration: none;
-			color: white;
-			display: block;
-		}
-
-		.sidenav a:hover {
-			color: FloralWhite;
-		}
-
-		.main {
-			margin-left: 260px; /*largura da sidenav*/
-			padding: 30px 30px 30px 30px;
-			z-index: 0;
-		}
-		
-		.main h1 {
-			color: DarkRed;
-		}
-
-		.main a {
-			text-decoration: none;
-			color: DarkRed;
-		}
-
-		.dropdown {
-			position: relative;
-			display: inline-block;			
-		}
-		
-		.dropdown-content {
-			display: none;
-			position: absolute;
-			background-color: DarkRed;
-			min-width: 230px;
-			z-index: 1;
-			box-shadow: 6px 6px 6px 30px rgba(139,0,0,0);
-		}
-	
-		.dropdown:hover .dropdown-content {
-			display: block;
-		}
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
+	<header id="masterhead" class="site-header">
+		<div class="sidenav">
+			<h1>
+				<a id="titulo-site" href="index.html" rel="home">Fernanda A.</a>
+			</h1>
 
-	<div class="sidenav">
-		<a href="index.html"><h1>Fernanda A.</h1></a>
-
-		<div class="dropdown">
-			<a href="index.html"><b>Artwork</b></a>			
-			<div class="dropdown-content">
-				<a href="memoria.html">Memória</a>
-				<a href="vazio.html">Vazio</a>
-				<a href="pertencimento.html">Pertencimento</a>		
-			</div>
+			<nav id="navegacao-primaria" role="navigation">
+				<div id="menu-principal" class="menu-principal-conteudo">
+					<ul id="menu-menu-principal" class="nav-menu">
+						<div class="dropdown">
+							<li id="item-menu-home">
+								<a href="index.html">
+									<b>Artwork</b>
+								</a>			
+							</li>
+							<div class="dropdown-conteudo">
+								<!--<ul id="item-menu-artwork">-->
+									<li id="item-menu-artwork-memoria">
+										<a href="memoria.html">Memória</a>
+									</li>
+									<li id="item-menu-artwork-vazio">
+										<a href="vazio.html">Vazio</a>	
+									</li>
+									<li id="item-menu-artwork-pertencimento">
+										<a href="pertencimento.html">Pertencimento</a>	
+									</li>
+								<!--</ul>-->
+							</div>
+						</div>
+						<li id="item-menu-aboutme">
+							<a href="aboutme.html">About Me</a>	
+						</li>
+					</ul>	
+				</div>
+			</nav>
 		</div>
-
-		<a href="aboutme.html">About Me</a>
-	</div>
+	</header>
 
 	<div class="main">
-		<h1>Artwork</h1>
+		<h1 id="titulo-pagina">
+			<a href="index.html">Artwork</a>
+		</h1>
 		
-		<b>	
-		<a href="pertencimento.html">Pertencimento</a>
-		<a href="vazio.html">Vazio</a>
-		<a href="memoria.html">Memória</a>
-		<a href="solidao.html">Solidão</a>
+		<b>
+		<div class="artwork-links">
+			<div class="imagem-link">
+				<a class="imagem-link" href="pertencimento.html">
+					<img src="Artwork\Pertencimento\01.jpg" alt="Link para ensaio Pertencimento">
+				</a>
+				<div>
+					<a class="titulo-link" href="pertencimento.html">Pertencimento</a>	
+				</div>
+			</div>
+			
+			<div class="imagem-link">
+				<a class="imagem-link" href="vazio.html">
+					<img src="Artwork\Vazio\01.jpg" alt="Link para ensaio Vazio">
+				</a>
+				<div>
+					<a class="titulo-link" href="vazio.html">Vazio</a>
+				</div>
+			</div>
+			
+			<div class="imagem-link">
+				<a class="imagem-link" href="memoria.html">
+					<img src="Artwork\Memória\01.jpg" alt="Link para ensaio Memória">
+				</a>
+				<div>
+					<a class="titulo-link" href="memoria.html">Memória</a>	
+				</div>
+			</div>
+
+			<!--<a href="solidao.html">Solidão</a>-->
+		</div>
+		
 		</b>
+
+
+
 	</div>
 
 </body>
